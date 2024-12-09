@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Reset */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: 'Arial', sans-serif;
+          line-height: 1.6;
+          background-color: #f5f5f5;
+          color: #333;
+        }
+    
+        header {
+          position: sticky;
+          top: 0%;
+          background-color: #000033;
+          color: #fff;
+          padding: 1rem 0;
+        }
+    
+        .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+    
+        nav ul {
+          list-style: none;
+          display: flex;
+          gap: 20px;
+        }
+    
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        nav ul li a:hover {
+          text-decoration: underline;
+        }
+    
+        .about, .team, .banner {
+          max-width: 1200px;
+          margin: 2rem auto;
+          padding: 0 20px;
+        }
+    
+        .about h2, .team h2 {
+          color: #000033;
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        .about p {
+          font-size: 1.1rem;
+          color: #555;
+        }
+    
+        .team {
+          display: flex;
+          gap: 20px;
+        }
+    
+        .team-member {
+          background-color: #fff;
+          padding: 1rem;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          flex: 1;
+        }
+    
+        .team-member img {
+          max-width: 100%;
+          border-radius: 50%;
+          border: 3px solid #000033;
+        }
+    
+        .team-member h3 {
+          color: #000033;
+          font-size: 1.5rem;
+          margin: 1rem 0 0.5rem;
+        }
+    
+        .team-member p {
+          font-size: 1rem;
+          color: #555;
+        }
+    
+        .team-member a {
+          display: inline-block;
+          margin-top: 0.5rem;
+          color: #000033;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        .team-member a:hover {
+          text-decoration: underline;
+        }
+    
+        .banner img {
+            margin-left: 50%;
+          width: 575px;
+          height: 300px;
+          border-radius: 10px;
+        }
+    
+        footer {
+          text-align: center;
+          padding: 1rem 0;
+          background: #000033;
+          color: #fff;
+          margin-top: 2rem;
+        }
+    
+        footer p {
+          font-size: 0.9rem;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1>ProfileTeam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>About This Website</h2>
+            <p>
+                Welcome to our Portfolio website! This platform serves as a showcase
+                of our personal and academic journey, highlighting our skills and
+                achievements. Feel free to explore and check it out!
+            </p>
+        </section>
+        
+        <section class="banner">
+            <img src="https://www.camphub.in.th/wp-content/uploads/2024/10/CE-NEXT-GEN-2-edited.jpg" alt="CE Next Gen">
+          </section>
+
+          <section class="team">
+            <h2>The Team</h2>
+            <div class="team-member">
+              <img src="pai.png" alt="Lapinrat">
+              <h3>Lapinrat Rt.</h3>
+              <p>
+                Hello! I'm Lapinrat. This is mostly my academic journey. Feel free to check it out!
+              </p>
+              <a href="index1.html">link</a>
+            </div>
+            <div class="team-member">
+              <img src="gunners.png" alt="Kananek">
+              <h3>Kananek T.</h3>
+              <p>
+                Hello! I'm Kananek. This is mostly my academic journey. Feel free to check it out!
+              </p>
+              <a href="index2.html">link</a>
+            </div>
+          </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProfileTEAM</p>
+      </footer>
+</body>
+</html>
