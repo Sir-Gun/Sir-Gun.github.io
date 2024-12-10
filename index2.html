@@ -116,6 +116,13 @@
             background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .details-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
         }
 
         .details-section h3 {
@@ -125,6 +132,11 @@
             border-bottom: 2px solid #ff7849;
             display: inline-block;
             padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .details-section:hover h3 {
+            color: #ff7849;
         }
 
         .info-box {
@@ -149,6 +161,13 @@
             background-color: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .achievements-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #f0f0f0;
         }
 
         .achievements-section h3 {
@@ -158,6 +177,11 @@
             border-bottom: 2px solid #ff7849;
             display: inline-block;
             padding-bottom: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .achievements-section:hover h3 {
+            color: #ff7849;
         }
 
         .achievement-item {
@@ -178,6 +202,12 @@
           border-radius: 10%;
         }
 
+        .achievement-item:hover {
+            background-color: #fffbf4;
+            transform: scale(1.03);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .profile-section {
@@ -189,7 +219,25 @@
             .achievements-section {
                 margin-top: 20px;
         }
-        }        
+        }    
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            background: linear-gradient(90deg, #ffffff, #f7f7f7, #e3f2f1, #ffffff);
+            background-size: 200% 200%;
+            animation: gradientAnimation 15s ease infinite;
+        }
     </style>
 </head>
 <body>
